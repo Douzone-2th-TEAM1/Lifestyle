@@ -2,6 +2,12 @@
 
 미니 프로젝트
 
+## 👨🏻‍🏫  와이어 프레임
+
+<a href="https://www.figma.com/file/8z2bUrJVoYibwKpapkWWiK/Untitled?node-id=0%3A1" >와이어 프레임 샘플</a>
+
+
+
 ## 📂 프로젝트 구조
 
 | 폴더 / 파일 | 설명                       |
