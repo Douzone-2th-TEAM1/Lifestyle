@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier League Football News</title>
+    <!-- 파비콘 설정 -->
+    <link rel="icon" href="../../public/images/TM/favicon_epl.png" />
+
+    <!--브라우저 스타일 초기화-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!--Google Material Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/TM/TM-page2.css" />
+    <script type="text/javascript">
+      const loadPage = () => {
+        $(document).ready(function() {
+          $('body').load('./TM-page3.html');
+          $('html, body').stop().animate({scrollTop: 0}, 0);
+        });
+      };
+    </script>
+  </head>
+
+  <body>
+
+    <header> 
+      <!-- to index.html -->
+      <a href=""><img src="../../public/images/logo.png" alt="LOGO" /></a>
+    </header>
+
+    <div class="contents" id="contents">
+      <div class="inner__contents" id="inner-top">
+        <div id="inner__contents-img-left">
+          <img src="../../public/images/TM/sample11.jpg" alt="Image" />
+        </div>
+        <div id="inner__contents-text-right">
+          <h2>'주급 8억원 가능'…EPL 최고 갑부구단, 네이마르 영입 추진</h2>
+          <p>네이마르는 지난 2017-18시즌을 앞두고 2억 2200만유로(약 3040억원)의 이적료와 함께 바르셀로나에서 PSG로 이적했다.
+            네이마르는 당시 역대 최고 이적료를 기록했지만 잦은 부상 등으로 인해 최근 4시즌 동안 리그1에서 20경기 이상 출전한 시즌이 없을 만큼 저조한 활약을 펼쳤다.
+            PSG와 2025년까지 계약되어 있는 네이마르는 주급 50만파운드(약 8억원)를 받는 것으로 전해졌다.
+          </p>
+          
+          <p>네이마르 영입 가능성으로 주목받고 있는 뉴캐슬은 지난해 사우디아라비아 국부펀드에 인수되며 프리미어리그 최고 갑부 구단으로 떠올랐다.
+            뉴캐슬은 올 시즌 전반기 리그 최하위권에 머물며 강등 위기에 놓였지만 지난 1월 이적 시장을 통해 공격수 크리스 우드 등을 영입해 전력을 보강했고 14위까지 순위를 끌어 올리며 강등 경쟁에서 벗어났다.
+            뉴캐슬은 올 시즌 종료 후 대대적인 선수 보강이 점쳐지는 가운데 네이마르 영입설로 주목받고 있다.
+          </p>
+          </div>
+      </div>
+
+      <div class="inner__contents" id="liveresult" onclick="loadPage()">
+        <div id="inner__contents-text-left">
+          <h2>Today's Match</h2>
+          <p>해외축구 경기 일정/결과</p>
+        </div>
+        <div id="inner__contents-img-right">
+          <img src="../../public/images/TM/sample10.jpg" alt="Image" />
+        </div>
+    </div>
+
+  </body>
+</html>
