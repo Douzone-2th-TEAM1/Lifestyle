@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier League Football News</title>
+    <!-- 파비콘 설정 -->
+    <link rel="icon" href="../../public/images/TM/favicon_epl.png" />
+
+    <!--브라우저 스타일 초기화-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!--Google Material Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/TM/TM-page3.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- to index.html -->
+      <a href="./TM-page2.html"
+        ><img src="../../public/images/logo.png" alt="LOGO"
+      /></a>
+    </header>
+
+    <div class="contents">
+      <div class="inner__contents">
+        <h2>경기 일정/결과</h2>
+        <div id="visual">
+          <img src="../../public/images/TM/sample10.jpg" alt="" />
+        </div>
+
+        <div class="liveresult">
+          <div class="liveresults-header" id="epl">
+            <img src="../public/images/TM/logo_epl.png" alt="" />
+            <h4>프리미어리그</h4>
+          </div>
+          <div class="liveresults-body">
+            <table class="liveresults-table">
+              <tbody>
+                <tr>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-top-left"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">에버턴</td>
+                        <td id="liveresult-match-info-score-A">1</td>
+                        <td id="liveresult-match-info-status">풀타임</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">뉴캐슬</td>
+                        <td id="liveresult-match-info-score-B">0</td>
+                        <td id="liveresult-match-info-date">3.18. (금)</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-top-right"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">울브스</td>
+                        <td id="liveresult-match-info-score-A">2</td>
+                        <td id="liveresult-match-info-status">풀타임</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">
+                          리즈 유나이티드
+                        </td>
+                        <td id="liveresult-match-info-score-B">3</td>
+                        <td id="liveresult-match-info-date">어제</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-left"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">애스턴 빌라</td>
+                        <td id="liveresult-match-info-score-A">0</td>
+                        <td id="liveresult-match-info-status">풀타임</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">아스널</td>
+                        <td id="liveresult-match-info-score-B">1</td>
+                        <td id="liveresult-match-info-date">어제</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-right"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">왓퍼드</td>
+                        <td id="liveresult-match-info-score-A"></td>
+                        <td id="liveresult-match-info-status">연기됨</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">에버턴</td>
+                        <td id="liveresult-match-info-score-B"></td>
+                        <td id="liveresult-match-info-date">시간 미정</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-left"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">레스터 시티</td>
+                        <td id="liveresult-match-info-score-A"></td>
+                        <td id="liveresult-match-info-status">오늘</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">브렌트퍼드</td>
+                        <td id="liveresult-match-info-score-B"></td>
+                        <td id="liveresult-match-info-date">오후 11:00</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-right"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">토트넘</td>
+                        <td id="liveresult-match-info-score-A"></td>
+                        <td id="liveresult-match-info-status">내일</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">웨스트 햄</td>
+                        <td id="liveresult-match-info-score-B"></td>
+                        <td id="liveresult-match-info-date">오전 1:30</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="liveresults-header" id="laliga">
+            <img src="../public/images/TM/logo_laliga.png" alt="" />
+            <h4>라리가</h4>
+          </div>
+          <div class="liveresults-body">
+            <table class="liveresults-table">
+              <tbody>
+                <tr>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-top-left"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">알라베스</td>
+                        <td id="liveresult-match-info-score-A">2</td>
+                        <td id="liveresult-match-info-status">풀타임</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">그라나다</td>
+                        <td id="liveresult-match-info-score-B">3</td>
+                        <td id="liveresult-match-info-date">어제</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-top-right"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">엘체</td>
+                        <td id="liveresult-match-info-score-A">0</td>
+                        <td id="liveresult-match-info-status">풀타임</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">발렌시아</td>
+                        <td id="liveresult-match-info-score-B">1</td>
+                        <td id="liveresult-match-info-date">오늘</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-left"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">오사수나</td>
+                        <td id="liveresult-match-info-score-A">3</td>
+                        <td id="liveresult-match-info-status">풀타임</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">레반테</td>
+                        <td id="liveresult-match-info-score-B">1</td>
+                        <td id="liveresult-match-info-date">오늘</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-right"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">라요</td>
+                        <td id="liveresult-match-info-score-A">0</td>
+                        <td id="liveresult-match-info-status">풀타임</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">아틀레티코</td>
+                        <td id="liveresult-match-info-score-B">1</td>
+                        <td id="liveresult-match-info-date">오늘</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-left"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">에스파뇰</td>
+                        <td id="liveresult-match-info-score-A"></td>
+                        <td id="liveresult-match-info-status">오늘</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">마요르카</td>
+                        <td id="liveresult-match-info-score-B"></td>
+                        <td id="liveresult-match-info-date">오후 10:00</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td
+                    class="liveresult-match-tile"
+                    id="liveresults-match-tile-right"
+                  >
+                    <table id="liveresult-match-info">
+                      <tr>
+                        <td id="liveresult-match-info-team-A">카디스</td>
+                        <td id="liveresult-match-info-score-A"></td>
+                        <td id="liveresult-match-info-status">내일</td>
+                      </tr>
+                      <tr>
+                        <td id="liveresult-match-info-team-B">비야레알</td>
+                        <td id="liveresult-match-info-score-B"></td>
+                        <td id="liveresult-match-info-date">오전 12:15</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
