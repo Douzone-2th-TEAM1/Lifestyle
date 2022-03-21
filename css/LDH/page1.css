@@ -22,6 +22,7 @@ header img {
 }
 
 .contents {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   padding: 5% 20%;

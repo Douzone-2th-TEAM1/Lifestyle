@@ -9,7 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
       const loadPage = () => {
-        console.log("ttt");
         $(document).ready(function () {
           $("#contents_layout").load("../LDH/page2.html");
         });
@@ -26,7 +25,7 @@
     </div>
 
     <div id="contents_layout">
-      <div class="contents">
+      <div class="contents" onclick="loadPage()">
         <img src="../../public/images/LDH/TabS8.jpg" />
         <div class="text">
           <h3>
