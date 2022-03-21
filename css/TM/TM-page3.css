@@ -1,0 +1,165 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  min-width: 1570px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 50px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 15.13px 20%;
+}
+header img {
+  width: 200px;
+  height: 30px;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+}
+
+.contents .inner__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+}
+#title {
+  position: relative;
+}
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10% 0;
+}
+#banner-title > h2 {
+  font-size: 36px;
+  font-weight: 550;
+}
+#banner-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#banner-img > img {
+  width: 95%;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.liveresult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+}
+.liveresults-header,
+.liveresults-body {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.liveresults-header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 10px 0;
+}
+.liveresults-header h4 {
+  color: #f5f5f5;
+  margin: 0;
+  padding: 10px;
+}
+.liveresults-header img {
+  width: 40px;
+  height: auto;
+  margin: 0;
+}
+#epl {
+  background-color: #3f1052;
+}
+#laliga {
+  background-color: #003472;
+}
+.liveresults-body .liveresults-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  font-size: 14px;
+}
+.liveresult-match-tile {
+  width: 50%;
+}
+#liveresults-match-tile-top-left {
+  border-top: solid 1px #3c4043;
+  border-left: solid 1px #3c4043;
+  border-right: solid 1px #3c4043;
+  border-bottom: solid 1px #3c4043;
+}
+#liveresults-match-tile-left {
+  border-left: solid 1px #3c4043;
+  border-right: solid 1px #3c4043;
+  border-bottom: solid 1px #3c4043;
+}
+#liveresults-match-tile-top-right {
+  border-top: solid 1px #3c4043;
+  border-right: solid 1px #3c4043;
+  border-bottom: solid 1px #3c4043;
+}
+#liveresults-match-tile-right {
+  border-right: solid 1px #3c4043;
+  border-bottom: solid 1px #3c4043;
+}
+#liveresult-match-info {
+  width: 100%;
+}
+#liveresult-match-info-team-A,
+#liveresult-match-info-team-B {
+  width: 60%;
+  padding: 0 10px;
+}
+#liveresult-match-info-score-A,
+#liveresult-match-info-score-B {
+  width: 10%;
+  padding: 0 10px;
+}
+#liveresult-match-info-status,
+#liveresult-match-info-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 10px;
+}
+#liveresult-match-info-team-A,
+#liveresult-match-info-score-A,
+#liveresult-match-info-status {
+  padding-top: 10px;
+}
+#liveresult-match-info-team-B,
+#liveresult-match-info-score-B,
+#liveresult-match-info-date {
+  padding-bottom: 10px;
+}
+#footer {
+  border-top: 1px solid rgba(33, 33, 33, 0.53);
+  padding-top: 20%;
+}
