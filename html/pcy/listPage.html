@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../public/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="../../css/pcy/listPage.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      const loadPage = () => {
+        $(document).ready(function () {
+          $("#contents").load("./articlePage.html");
+        });
+      };
+    </script>
+    <title>Life story</title>
+  </head>
+  <body>
+    <header>
+      <a href="../../public/index.html">
+        <img src="../../public/images/logo.png" alt="LOGO" />
+      </a>
+    </header>
+
+    <div id="contents">
+      <div class="contents__item" onclick="loadPage()">
+        <div class="box">
+          <img id="id_img" src="../../public/images/sample6.jpeg" />
+
+          <div class="box__text">
+            <h3>How it works ?</h3>
+            <h5>
+              Cards are built with as little markup and styles as possible, but
+              still manage to deliver a ton of control and customization. Built
+              with flexbox, they offer easy alignment and mix well with other
+              Bootstrap components.
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="contents__item" onclick="loadPage()">
+        <div class="box">
+          <div class="box__text">
+            <h3>How it works ?</h3>
+            <h5>
+              Cards are built with as little markup and styles as possible, but
+              still manage to deliver a ton of control and customization. Built
+              with flexbox, they offer easy alignment and mix well with other
+              Bootstrap components.
+            </h5>
+          </div>
+
+          <img id="id_img" src="../../public/images/sample7.jpeg" />
+        </div>
+      </div>
+
+      <div class="contents__item" onclick="loadPage()">
+        <div class="box">
+          <img id="id_img" src="../../public/images/sample8.jpeg" />
+
+          <div class="box__text">
+            <h3>How it works ?</h3>
+            <h5>
+              Cards are built with as little markup and styles as possible, but
+              still manage to deliver a ton of control and customization. Built
+              with flexbox, they offer easy alignment and mix well with other
+              Bootstrap components.
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

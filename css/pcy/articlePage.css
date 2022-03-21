@@ -1,0 +1,54 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  min-width: 1570px;
+}
+
+.contents {
+  padding: 5% 20%;
+}
+
+.contents .contents__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  height: auto;
+}
+.contents .contents__img img {
+  width: 80%;
+  /* height: 500px; */
+}
+
+.contents .contents__text {
+  margin: 10% 0%;
+  text-align: center;
+}
+
+.contents .contents-side {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contents .contents-side .contents-side-text {
+  width: 35%;
+  /* margin-right: 5%; */
+}
+
+.contents .contents-side .contents-side-img {
+  /* width: 30%; */
+  height: fit-content;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 21px;
+}
+h5 {
+  font-weight: 300;
+  font-size: 20px;
+}
