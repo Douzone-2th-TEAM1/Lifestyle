@@ -6,7 +6,8 @@ body {
   min-width: 1570px;
 }
 
-.contents_item {
+.contents {
+  cursor: revert;
   display: flex;
   flex-direction: column;
   padding: 5% 20%;
@@ -30,10 +31,6 @@ table td {
   text-align: start;
   height: auto;
   width: auto;
-}
-
-h6 {
-  line-height: 1.8;
-  font-weight: 300;
-  font-size: 20px;
+  /* align-items: center; */
+  /* text-align: center; */
 }
