@@ -7,7 +7,9 @@ body {
 }
 
 .contents {
+  cursor: pointer;
   padding: 5% 20%;
+  border-bottom: 1px solid black;
 }
 
 .contents .contents__img {
