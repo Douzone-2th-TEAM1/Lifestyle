@@ -18,17 +18,19 @@ h6 {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   display: flex;
   justify-items: center;
   align-items: center;
-  height: 80px;
+  /* height: 50px; */
   background-color: #ffeddb;
-  padding: 15.13px 20%;
+  padding: 15px 20%;
 }
 
 header img {
-  width: 200px;
-  height: 30px;
+  height: 50px;
 }
 
 .contents {
@@ -109,4 +111,9 @@ header img {
 .contents .contents__img {
   width: 60;
   height: 400px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  height: 50px;
 }

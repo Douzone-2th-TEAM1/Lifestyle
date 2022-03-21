@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="/">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,13 +25,24 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../css/TM/TM-page3.css" />
+    <!-- Youtube.js - should be first-->
+    <script defer src="../../js/youtube.js"></script>
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#footer').load('../../public/footer.html');
+      });
+    </script>
+    </style>
+    <link rel="stylesheet" href="../../css/TM/TM-page3.css">
   </head>
 
   <body>
     <header>
       <!-- to index.html -->
-      <a href="./TM-page2.html"
+      <a href="public/index.html"
         ><img src="../../public/images/logo.png" alt="LOGO"
       /></a>
     </header>
@@ -40,7 +52,7 @@
         <div id="banner">
           <div id="banner-title"><h2>경기 일정/결과</h2></div>
           <div id="banner-img">
-            <img src="../../public/images/TM/sample10.jpg" alt="" />
+            <img src="../../public/images/TM/champs.jpg" alt="" />
           </div>
         </div>
 
@@ -288,10 +300,15 @@
           </div>
         </div>
       </div>
+
+      <!--YOUTUBE VIDEO-->
+      <div class="youtube">
+        <div class="youtube__area">
+          <div id="player"></div>
+        </div>
+      </div>
     </div>
 
-    <div id="footer">
-      <h1>add footer</h1>
-    </div>
+    <div id="footer"></div>
   </body>
 </html>
