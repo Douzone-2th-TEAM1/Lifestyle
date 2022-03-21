@@ -12,13 +12,14 @@ header {
   display: flex;
   justify-items: center;
   align-items: center;
-  height: 50px;
+  /* height: 50px; */
   background-color: #ffeddb;
-  padding: 15.13px 20%;
+  padding: 15px 20%;
 }
 
 header img {
   /* width: 200px; */
+  padding: 0;
   height: 50px;
 }
 
@@ -72,4 +73,5 @@ h5 {
 a {
   text-decoration: none;
   color: black;
+  height: 50px;
 }
