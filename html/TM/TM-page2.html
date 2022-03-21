@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life story</title>
+    <!-- 파비콘 설정 -->
+    <link rel="icon" href="../../public/favicon.png" />
+
+    <!--브라우저 스타일 초기화-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!--Google Material Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#footer").load("../../public/footer.html");
+      });
+
+      const loadPage = () => {
+        $(document).ready(function () {
+          $("body").load("html/TM/TM-page3.html");
+          $("html, body").stop().animate({ scrollTop: 0 }, 0);
+        });
+      };
+    </script>
+    <link rel="stylesheet" href="../../css/TM/TM-page2.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- to index.html -->
+      <a href="../../public/index.html"
+        ><img src="../../public/images/logo3.png" alt="LOGO"
+      /></a>
+    </header>
+
+    <div class="contents" id="contents">
+      <div class="inner__contents">
+        <div id="article">
+          <div id="inner__contents-img-left">
+            <img src="../../public/images/TM/sample11.jpg" alt="Image" />
+          </div>
+          <div id="inner__contents-text-right">
+            <h2>'주급 8억원 가능'…EPL 최고 갑부구단, 네이마르 영입 추진</h2>
+            <p>
+              네이마르는 지난 2017-18시즌을 앞두고 2억 2200만유로(약 3040억원)의
+              이적료와 함께 바르셀로나에서 PSG로 이적했다. 네이마르는 당시 역대
+              최고 이적료를 기록했지만 잦은 부상 등으로 인해 최근 4시즌 동안
+              리그1에서 20경기 이상 출전한 시즌이 없을 만큼 저조한 활약을
+              펼쳤다. PSG와 2025년까지 계약되어 있는 네이마르는 주급
+              50만파운드(약 8억원)를 받는 것으로 전해졌다.
+            </p>
+
+            <p>
+              네이마르 영입 가능성으로 주목받고 있는 뉴캐슬은 지난해
+              사우디아라비아 국부펀드에 인수되며 프리미어리그 최고 갑부 구단으로
+              떠올랐다. 뉴캐슬은 올 시즌 전반기 리그 최하위권에 머물며 강등
+              위기에 놓였지만 지난 1월 이적 시장을 통해 공격수 크리스 우드 등을
+              영입해 전력을 보강했고 14위까지 순위를 끌어 올리며 강등 경쟁에서
+              벗어났다. 뉴캐슬은 올 시즌 종료 후 대대적인 선수 보강이 점쳐지는
+              가운데 네이마르 영입설로 주목받고 있다.
+            </p>
+          </div>
+        </div>
+
+        <div id="article">
+          <div id="inner__contents-text-left">
+            <h2>
+              '손흥민 첫 멀티골' 토트넘, 웨스트햄 3-1 제압…2연승, 5위 도약
+            </h2>
+            <p>
+              잉글랜드 프로축구 프리미어리그(EPL) 토트넘 홋스퍼의 손흥민이 올
+              시즌 첫 멀티골을 터뜨리며 팀을 승리로 이끌었다. 2연승을 기록한
+              토트넘은 리그 5위로 도약했다.
+            </p>
+            <p>
+              지난 17일 브라이튼 앤드 호브 알비온전에서 2-0으로 승리했던
+              토트넘은 2연승에 성공, 16승3무10패(승점51)로 맨체스터
+              유나이티드(14승8무7패‧승점50)를 끌어내리고 5위에 올랐다. 손흥민은
+              이날 EPL 12, 13호골을 신고해 득점 부문에서 디오구 조타(리버풀)와
+              공동 2위에 올랐다.
+            </p>
+            <p>
+              이날 손흥민은 해리 케인의 도움을 받아 2골을 넣어 손흥민-케인
+              콤비는 EPL 통산 39골을 합작, 리그 통산 최다골 합작 부문 기록을
+              경신했다.
+            </p>
+          </div>
+          <div id="inner__contents-img-right">
+            <img src="../../public/images/TM/sonny.jpg" alt="Image" />
+          </div>
+        </div>
+
+        <div id="liveresult" onclick="loadPage()">
+          <div id="inner__contents-text-left">
+            <h2>Today's Match</h2>
+            <p>해외축구 경기 일정/결과</p>
+          </div>
+          <div id="inner__contents-img-right">
+            <img src="../../public/images/TM/sample10.jpg" alt="Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
