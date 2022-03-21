@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="/" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,8 +27,11 @@
     />
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="../../css/TM/TM-page2.css" />
     <script type="text/javascript">
+      $(document).ready(function () {
+        $("#footer").load("../../public/footer.html");
+      });
+
       const loadPage = () => {
         $(document).ready(function () {
           $("body").load("./TM-page3.html");
@@ -35,6 +39,7 @@
         });
       };
     </script>
+    <link rel="stylesheet" href="../../css/TM/TM-page2.css" />
   </head>
 
   <body>
@@ -74,6 +79,34 @@
           </div>
         </div>
 
+        <div id="article">
+          <div id="inner__contents-text-left">
+            <h2>
+              '손흥민 첫 멀티골' 토트넘, 웨스트햄 3-1 제압…2연승, 5위 도약
+            </h2>
+            <p>
+              잉글랜드 프로축구 프리미어리그(EPL) 토트넘 홋스퍼의 손흥민이 올
+              시즌 첫 멀티골을 터뜨리며 팀을 승리로 이끌었다. 2연승을 기록한
+              토트넘은 리그 5위로 도약했다.
+            </p>
+            <p>
+              지난 17일 브라이튼 앤드 호브 알비온전에서 2-0으로 승리했던
+              토트넘은 2연승에 성공, 16승3무10패(승점51)로 맨체스터
+              유나이티드(14승8무7패‧승점50)를 끌어내리고 5위에 올랐다. 손흥민은
+              이날 EPL 12, 13호골을 신고해 득점 부문에서 디오구 조타(리버풀)와
+              공동 2위에 올랐다.
+            </p>
+            <p>
+              이날 손흥민은 해리 케인의 도움을 받아 2골을 넣어 손흥민-케인
+              콤비는 EPL 통산 39골을 합작, 리그 통산 최다골 합작 부문 기록을
+              경신했다.
+            </p>
+          </div>
+          <div id="inner__contents-img-right">
+            <img src="../../public/images/TM/sonny.jpg" alt="Image" />
+          </div>
+        </div>
+
         <div id="liveresult" onclick="loadPage()">
           <div id="inner__contents-text-left">
             <h2>Today's Match</h2>
@@ -86,8 +119,6 @@
       </div>
     </div>
 
-    <div id="footer">
-      <h1>add footer</h1>
-    </div>
+    <div id="footer"></div>
   </body>
 </html>
