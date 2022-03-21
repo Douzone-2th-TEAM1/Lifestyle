@@ -10,9 +10,15 @@
     <script type="text/javascript">
       const loadPage = () => {
         $(document).ready(function () {
-          $("#contents_layout").load("../LDH/page2.html");
+          $("#contents_layout").load("html/LDH/page2.html");
         });
       };
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#footer").load("../../public/footer.html");
+      });
     </script>
   </head>
   <body>
@@ -61,7 +67,7 @@
         </div>
       </div>
 
-      <div class="contents">
+      <div class="contents" onclick="loadPage()">
         <div class="text">
           <h3>
             삼성 '갤럭시 S22 GOS' 표시광고법 위반 의혹, 공정위 본부서 조사
@@ -93,7 +99,7 @@
         <img src="../../public/images/LDH/S22.jpg" />
       </div>
 
-      <div class="contents">
+      <div class="contents" onclick="loadPage()" style="border-bottom: none">
         <img src="../../public/images/LDH/phone.jpeg" />
 
         <div class="text">
@@ -116,5 +122,7 @@
         </div>
       </div>
     </div>
+
+    <div id="footer"></div>
   </body>
 </html>
