@@ -13,10 +13,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
       const loadPage = () => {
+        console.log("ttt");
         $(document).ready(function () {
-          $("#contents").load("./articlePage.html");
+          $("#contents").load("html/pcy/articlePage.html");
         });
       };
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#footer").load("../../public/footer.html");
+      });
     </script>
     <title>Life story</title>
   </head>
@@ -76,5 +83,6 @@
         </div>
       </div>
     </div>
+    <div id="footer"></div>
   </body>
 </html>
