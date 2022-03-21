@@ -1,0 +1,19 @@
+{
+  "name": "mini-hompage",
+  "version": "1.0.0",
+  "description": "미니 프로젝트",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Douzone-2th-TEAM1/Mini-Hompage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Douzone-2th-TEAM1/Mini-Hompage/issues"
+  },
+  "homepage": "https://github.com/Douzone-2th-TEAM1/Mini-Hompage#readme"
+}
