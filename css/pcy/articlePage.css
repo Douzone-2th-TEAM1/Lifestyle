@@ -15,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
   height: auto;
 }
 .contents .contents__img img {
@@ -44,11 +44,11 @@ body {
   height: fit-content;
 }
 
-h3 {
+h4 {
   font-weight: bold;
   font-size: 21px;
 }
-h5 {
+h6 {
   font-weight: 300;
   font-size: 20px;
 }
