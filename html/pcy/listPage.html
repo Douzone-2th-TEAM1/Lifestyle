@@ -15,6 +15,7 @@
       const loadPage = () => {
         $(document).ready(function () {
           $("#contents").load("html/pcy/articlePage.html");
+          $("html, body").stop().animate({ scrollTop: 0 }, 0);
         });
       };
     </script>

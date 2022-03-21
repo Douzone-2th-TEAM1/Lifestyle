@@ -5,12 +5,13 @@
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
     <link rel="stylesheet" href="../../css/LDH/page1.css" />
-
+    <link rel="icon" href="../../public/favicon.png" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
       const loadPage = () => {
         $(document).ready(function () {
           $("#contents_layout").load("html/LDH/page2.html");
+          $("html, body").stop().animate({ scrollTop: 0 }, 0);
         });
       };
     </script>
@@ -20,6 +21,7 @@
         $("#footer").load("../../public/footer.html");
       });
     </script>
+    <title>Life story</title>
   </head>
   <body>
     <div>
