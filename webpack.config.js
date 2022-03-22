@@ -3,9 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
+  devServer: { contentBase: './dist' },
   entry: './public/index.js',
   output: {
-    filename: './public/index.html',
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
     clean: { keep: /\.git/ },
   },
   module: {
@@ -16,9 +18,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
-    // new HtmlWebpackPlugin({ template: './html/pcy/listPage.html' }),
+    new HtmlWebpackPlugin({ template: './public/index.html' }),
   ],
 };
