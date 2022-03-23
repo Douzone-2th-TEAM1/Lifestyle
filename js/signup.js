@@ -34,7 +34,8 @@ const checkID = () => {
 };
 
 const signUp = () => {
-  const event = document.getElementsByTagName('form')[0];
+  const event = document.getElementsByClassName('contents')[0];
+  debugger;
   let pwd = event[2].value;
   let pwdOk = event[3].value;
 
