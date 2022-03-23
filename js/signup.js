@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,33 +24,33 @@
             user = document.getElementById('userName').value;
 
             const originInfos = JSON.parse(localStorage.getItem('userInfo'));
-            
+
             for (let i = 0; i < originInfos.length; i++) {
                 if (originInfos[i][0].includes(user)) {
                     alert('중복 ID');
                 }
             };
-
-            const signUp = () => {
-                const user = event.target[0].value;
-                const pwd = event.target[2].value;
-                const pwdOk = event.target[3].value;
-
-                const originInfos = JSON.parse(localStorage.getItem('userInfo'));
-
-                if (pwd === pwdOk && !originInfos.includes(user)) {
-
-                    // Set localStorage
-                    originInfos.push([user, pwd]);
-                    localStorage.setItem("userInfo", JSON.stringify(originInfos));
-
-                } else if (pwd !== pwdOk) {
-                    alert('비밀번호 불일치');
-                } else if (Arr.includes(user)) {
-                    alert('중복된 ID');
-                }
-            };
         }
+
+        const signUp = () => {
+            const user = event.target[0].value;
+            const pwd = event.target[2].value;
+            const pwdOk = event.target[3].value;
+
+            const originInfos = JSON.parse(localStorage.getItem('userInfo'));
+
+            if (pwd === pwdOk && !originInfos.includes(user)) {
+
+                // Set localStorage
+                originInfos.push([user, pwd]);
+                localStorage.setItem("userInfo", JSON.stringify(originInfos));
+
+            } else if (pwd !== pwdOk) {
+                alert('비밀번호 불일치');
+            } else if (originInfos.includes(user)) {
+                alert('중복된 ID');
+            }
+        };
     </script>
 </head>
 
