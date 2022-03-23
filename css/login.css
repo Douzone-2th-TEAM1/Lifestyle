@@ -14,7 +14,7 @@ input::placeholder {
   color: #979797;
 }
 
-.input-box{
+.login-layout {
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -59,8 +59,8 @@ input::placeholder {
 }
 
 /* ID / PASSWORD 입력창 width 설정 */
-.input-box_password,
-.input-box_login {
+#input-id,
+#input-password {
   width: 230px;
   border: none;
 }
@@ -72,17 +72,16 @@ input::placeholder {
 }
 
 /* BUTTON SIGN IN 설정 */
-.btnon {
+#btn-signin {
   width: 100%;
   height: auto;
   background-color: #bf9270;
-  border: 1px solid #ffffff;
+  border: 1px solid #bf9270;
   font-weight: bold;
   color: white;
 }
-.off-button{
-  cursor:not-allowed;
-  background-color: #cccccc;
+#btn-signin:hover {
+  background: #ae774e;
 }
 /* CREATE ACCOUNT 설정*/
 #create-account {

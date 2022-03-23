@@ -1,9 +1,10 @@
-body {
+.main-body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
   min-width: 1570px;
+  background-color: white;
 }
 
 h5 {

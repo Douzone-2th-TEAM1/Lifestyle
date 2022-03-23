@@ -45,7 +45,9 @@ const signUp = () => {
       originInfos.push([user, pwd]);
       localStorage.setItem('userInfo', JSON.stringify(originInfos));
       alert('회원가입 완료!');
-      init();
+      $(document).ready(function () {
+        $('#layout').load('/html/login.html');
+      });
       return;
     } else if (pwd.length <= 0 || pwdOk.length <= 0) {
       alert('잘못된 정보입니다.');
