@@ -35,7 +35,6 @@ const checkID = () => {
 
 const signUp = () => {
   const event = document.getElementsByClassName('contents')[0];
-  debugger;
   let pwd = event[2].value;
   let pwdOk = event[3].value;
 
@@ -45,7 +44,7 @@ const signUp = () => {
       originInfos.push([user, pwd]);
       localStorage.setItem('userInfo', JSON.stringify(originInfos));
       alert('회원가입 완료!');
-      init();
+      $('.contents').load('/html/login.html');
       return;
     } else if (pwd.length <= 0 || pwdOk.length <= 0) {
       alert('잘못된 정보입니다.');
@@ -58,14 +57,4 @@ const signUp = () => {
   } else {
     alert('잘못된 정보입니다.');
   }
-};
-
-const init = () => {
-  flag = false;
-  checkIdFlag = false;
-  user = '';
-
-  document.getElementById('userName').value = '';
-  document.getElementById('password').value = '';
-  document.getElementById('passwordOk').value = '';
 };
