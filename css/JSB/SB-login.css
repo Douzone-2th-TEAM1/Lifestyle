@@ -26,8 +26,7 @@ body {
     width:30.2%;
     height:10.6%;
 }
-
-.name{
+/* .enter_name{
     position:absolute;
     margin-top:40%;
     margin-left:15.6%;
@@ -48,10 +47,25 @@ body {
     display: flex;
     align-items: center;
     color: #979797;
-}
-.password{
+} */
+/* .name{
+    position : relative;
+    width:70%;
+    height:70%;
+    border:none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+} */
+/* .enter_password{
     position:absolute;
-    margin-top:55%;
+    margin-top:57%;
     margin-left:15.6%;
     width:68.5%;
     height: 9%;
@@ -70,13 +84,34 @@ body {
     display: flex;
     align-items: center;
     color: #979797;
-}
+} */
+/* .password{
+    position : relative;
+    width:70%;
+    height:70%;
+    border:none;
 
-.signin{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+} */
+
+/* button, button::after{
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+	transition: all 0.3s;
+} */
+/* .btn{
     cursor:pointer;
 
     position:absolute;
-    margin-top:70%;
+    margin-top:80%;
     margin-left:15.6%;
     width:70%;
     height: 10.5%;
@@ -92,19 +127,25 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 35px;
-    /* display: flex; */
     text-align: center;
     color: #FFFFFF;
-}
+    text-transform: uppercase;
+} */
+/* button::befor,
+button::after{
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: -1;
+} */
 
-.join {
-    margin-top:82%;
+/* .join {
+    margin-top:95%;
     margin-left:15.6%;
-}
+} */
 
-.join a {
-    font-size: 13px;
-    color: #9B9B9B;
+/* .join a {
+    font-size: 15px;
     text-decoration-line: none;
     color: #BF9270;
-}
+} */
