@@ -1,26 +1,15 @@
 <body>
-  <script defer type="text/javascript">
-    /* SIGN IN FUNCTION */
-    const signIn = () => {
-      $(document).ready(function () {
-        $('.root-body').load('/html/main.html');
-      });
-    };
-    /* CREATE ACCOUNT FUNCTION */
-    const createAccount = () => {
-      alert('create account');
-      $('#layout').load('/html/signup.html');
-    };
-  </script>
+  <link rel="stylesheet" href="/css/login.css" />
+  <script type="text/javascript" src="/js/login.js"></script>
   <form class="login-layout">
     <div id="login-id">
       <span class="material-icons"> perm_identity </span>
-      <span id="devider"></span>
+      <span id="divider"></span>
       <input type="text" name="" placeholder="User name" id="input-id" />
     </div>
     <div id="login-password">
       <span class="material-icons"> lock </span>
-      <span id="devider"></span>
+      <span id="divider"></span>
       <input
         type="password"
         name=""

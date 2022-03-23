@@ -34,8 +34,13 @@ const checkID = () => {
 };
 
 const signUp = () => {
+  let user = document.getElementById('userName').value;
+  if (user.length === 0) {
+    alert('아이디를 입력하세요.');
+    return;
+  }
   const event = document.getElementsByClassName('contents')[0];
-  debugger;
+  // debugger;
   let pwd = event[2].value;
   let pwdOk = event[3].value;
 
@@ -50,9 +55,9 @@ const signUp = () => {
       });
       return;
     } else if (pwd.length <= 0 || pwdOk.length <= 0) {
-      alert('잘못된 정보입니다.');
+      alert('잘못된 양식입니다.');
     } else {
-      alert('비밀번호 불일치');
+      alert('비밀번호가 일치하지 않습니다.');
       return;
     }
   } else if (checkIdFlag === false) {

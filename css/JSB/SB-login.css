@@ -1,7 +1,12 @@
-.root-body {
-  /* background-image: url('../../public/images/SB/background.jpg'); */
+.login-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1400px;
+  min-height: 914px;
+  background-image: url('../../public/images/SB/background.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .login-form {
