@@ -8,11 +8,22 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/login.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css" />
+    <script>
+      /* SIGN IN FUNCTION */
+      const signIn = () => {
+        alert('sign in');
+      };
+      /* CREATE ACCOUNT FUNCTION */
+      const createAccount = () => {
+        alert('create account');
+        $('.login-layout').load('/html/signup.html');
+      };
+    </script>
+    <title>Login Page</title>
   </head>
   <body>
-    <div class="login-form">
+    <form class="login-layout" onsubmit="signIn()">
       <div id="login-id">
         <span class="material-icons"> perm_identity </span>
         <span id="devider"></span>
@@ -29,8 +40,11 @@
         />
       </div>
       <div id="login-button">
-        <input type="button" value="Sign In" id="btn-signin" />
+        <input type="submit" value="SIGN IN" id="btn-signin" />
+        <div id="create-account" onclick="createAccount()">
+          Create your account
+        </div>
       </div>
-    </div>
+    </form>
   </body>
 </html>
