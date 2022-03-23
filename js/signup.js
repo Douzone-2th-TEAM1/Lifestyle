@@ -1,69 +1,70 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+if (localStorage.getItem('userInfo') === null) {
+  localStorage.setItem('userInfo', JSON.stringify([]));
+}
+let flag = false;
+let checkIdFlag = false;
+let user = '';
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-    <link rel="stylesheet" href="../css/signup.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript">
+const checkID = () => {
+  user = document.getElementById('userName').value;
+  if (user.length === 0) {
+    alert('아이디를 입력하세요.');
+    return;
+  }
+  const originInfos = JSON.parse(localStorage.getItem('userInfo'));
 
-        let userName = '';
-        userName = document.getElementById('userName');
+  if (originInfos.length > 0) {
+    for (let i = 0; i < originInfos.length; i++) {
+      if (originInfos[i][0] === user) {
+        flag = false;
+        break;
+      } else {
+        flag = true;
+      }
+    }
+  } else {
+    flag = true;
+  }
+  checkIdFlag = true;
+  if (flag) alert('사용가능한 ID입니다.');
+  else {
+    document.getElementById('userName').value = '';
+    alert('사용 불가능한 ID입니다');
+  }
+};
 
-        if (localStorage.getItem("userInfo") === null) {
-            localStorage.setItem("userInfo", JSON.stringify([]));
-        }
+const signUp = () => {
+  const event = document.getElementsByTagName('form')[0];
+  let pwd = event[2].value;
+  let pwdOk = event[3].value;
 
-        const checkID = () => {
-            user = document.getElementById('userName').value;
+  if (checkIdFlag && flag) {
+    const originInfos = JSON.parse(localStorage.getItem('userInfo'));
+    if (pwd === pwdOk && pwd.length > 0) {
+      originInfos.push([user, pwd]);
+      localStorage.setItem('userInfo', JSON.stringify(originInfos));
+      alert('회원가입 완료!');
+      init();
+      return;
+    } else if (pwd.length <= 0 || pwdOk.length <= 0) {
+      alert('잘못된 정보입니다.');
+    } else {
+      alert('비밀번호 불일치');
+      return;
+    }
+  } else if (checkIdFlag === false) {
+    alert('아이디 중복 체크 필요');
+  } else {
+    alert('잘못된 정보입니다.');
+  }
+};
 
-            const originInfos = JSON.parse(localStorage.getItem('userInfo'));
+const init = () => {
+  flag = false;
+  checkIdFlag = false;
+  user = '';
 
-            for (let i = 0; i < originInfos.length; i++) {
-                if (originInfos[i][0].includes(user)) {
-                    alert('중복 ID');
-                }
-            };
-        }
-
-        const signUp = () => {
-            const user = event.target[0].value;
-            const pwd = event.target[2].value;
-            const pwdOk = event.target[3].value;
-
-            const originInfos = JSON.parse(localStorage.getItem('userInfo'));
-
-            if (pwd === pwdOk && !originInfos.includes(user)) {
-
-                // Set localStorage
-                originInfos.push([user, pwd]);
-                localStorage.setItem("userInfo", JSON.stringify(originInfos));
-
-            } else if (pwd !== pwdOk) {
-                alert('비밀번호 불일치');
-            } else if (originInfos.includes(user)) {
-                alert('중복된 ID');
-            }
-        };
-    </script>
-</head>
-
-<body>
-    <form class="contents" onsubmit="signUp()">
-        <div class="id_layout">
-            <input id="userName" class="userName" placeholder="UserName" />
-            <input id="checkid" class="btn" type="button" value="Check ID" onclick="checkID()" />
-        </div>
-        <input id="password" class="password" placeholder="password" />
-        <input id="passwordOk" class="passwordOk" placeholder="Confirm Password" />
-        <input id="signup" class="btn" type="submit" value="SIGN UP" />
-    </form>
-</body>
-
-</html>
+  document.getElementById('userName').value = '';
+  document.getElementById('password').value = '';
+  document.getElementById('passwordOk').value = '';
+};
