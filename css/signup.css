@@ -1,3 +1,7 @@
+body {
+  padding: 0;
+}
+
 input {
   padding: 15px;
   font-size: 15px;
@@ -11,6 +15,7 @@ input {
 }
 
 .contents {
+  padding: 0;
   width: fit-content;
   height: 300px;
   display: flex;
