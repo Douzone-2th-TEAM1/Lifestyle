@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+input {
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: #979797;
+}
+
+.login-layout {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.material-icons {
+  cursor: default;
+  font-size: 36px;
+  padding-left: 30px;
+}
+
+/* ID / PASSWORD 영역 */
+/* ID / PASSWORD / BUTTON width 설정 */
+#login-id,
+#login-password,
+#login-button {
+  width: 300px;
+}
+/* ID / PASSWORD 레이아웃 설정 */
+#login-id,
+#login-password {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* ID / PASSWORD 테두리 설정 */
+#login-id,
+#login-password {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* ID / PASSWORD 아이콘 구분자 */
+#devider {
+  width: 10px;
+  height: 24px;
+  border-right: 1px solid #000000;
+}
+
+/* ID / PASSWORD 입력창 width 설정 */
+#input-id,
+#input-password {
+  width: 230px;
+  border: none;
+}
+
+/* BUTTON 영역 레이아웃 설정 */
+#login-button {
+  display: flex;
+  flex-direction: column;
+}
+
+/* BUTTON SIGN IN 설정 */
+#btn-signin {
+  width: 100%;
+  height: auto;
+  background-color: #bf9270;
+  border: 1px solid #bf9270;
+  font-weight: bold;
+  color: white;
+}
+#btn-signin:hover {
+  background: #ae774e;
+}
+/* CREATE ACCOUNT 설정*/
+#create-account {
+  font-size: 12px;
+  color: #bf9270;
+  padding: 0.8em;
+}
+#create-account:hover {
+  cursor: pointer;
+  color: #ae774e;
+}

@@ -7,6 +7,7 @@ body {
 }
 
 .contents {
+  /* cursor: pointer; */
   padding: 5% 20%;
 }
 
@@ -15,12 +16,11 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: black;
+
   height: auto;
 }
 .contents .contents__img img {
   width: 80%;
-  /* height: 500px; */
 }
 
 .contents .contents__text {
@@ -36,11 +36,9 @@ body {
 
 .contents .contents-side .contents-side-text {
   width: 35%;
-  /* margin-right: 5%; */
 }
 
 .contents .contents-side .contents-side-img {
-  /* width: 30%; */
   height: fit-content;
 }
 
@@ -48,7 +46,7 @@ h3 {
   font-weight: bold;
   font-size: 21px;
 }
-h5 {
+h6 {
   font-weight: 300;
   font-size: 20px;
 }
