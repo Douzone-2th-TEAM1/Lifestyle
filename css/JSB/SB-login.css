@@ -1,0 +1,110 @@
+body {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    /* object-fit: contain; */
+    background-image:url("../../public/images/SB/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-form {
+    margin-top:5%;
+    margin-left:30%;
+    position: absolute;
+    width: 40%;
+    height: 82%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.logo{
+    position:absolute;
+    margin-top: 12.4%;
+    margin-left: 34.8%;
+    width:30.2%;
+    height:10.6%;
+}
+
+.name{
+    position:absolute;
+    margin-top:40%;
+    margin-left:15.6%;
+    width:68.5%;
+    height:9%;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+}
+.password{
+    position:absolute;
+    margin-top:55%;
+    margin-left:15.6%;
+    width:68.5%;
+    height: 9%;
+    
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #979797;
+}
+
+.signin{
+    cursor:pointer;
+
+    position:absolute;
+    margin-top:70%;
+    margin-left:15.6%;
+    width:70%;
+    height: 10.5%;
+
+    background: #BF9270;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    /* display: flex; */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.join {
+    margin-top:82%;
+    margin-left:15.6%;
+}
+
+.join a {
+    font-size: 13px;
+    color: #9B9B9B;
+    text-decoration-line: none;
+    color: #BF9270;
+}
