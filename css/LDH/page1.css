@@ -26,7 +26,7 @@ header img {
   display: flex;
   justify-content: space-between;
   padding: 5% 20%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #dfd3c3;
 }
 
 .contents img {

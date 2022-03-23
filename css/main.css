@@ -46,14 +46,14 @@ header img {
 
 .contents .swiper {
   width: 100%;
-  height: 400px;
+  height: 450px;
 }
 
 .contents .swiper img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background-color: #f5f5f5;
+  background-color: #fef5ed;
 }
 
 .contents .inner__contents-card {
