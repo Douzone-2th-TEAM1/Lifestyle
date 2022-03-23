@@ -28,5 +28,3 @@
 | Design  | CSS 수정 및 삭제    |
 | Docs    | 문서 편집           |
 | Comment | 주석 추가           |
-
-ㅎㅇ
