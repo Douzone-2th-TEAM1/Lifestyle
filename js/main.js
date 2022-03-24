@@ -18,12 +18,9 @@ var loadMain = () => {
       $('html, body').stop().animate({ scrollTop: 0 }, 0);
     });
   } else {
-    alert('잘못된 접근입니다.');
+    modal.getElementsByClassName('title')[0].innerHTML = '잘못된 접근입니다.';
+    modalOn();
     sessionStorage.setItem('loginFlag', false);
-    $(document).ready(function () {
-      $('#root-body').load('/html/JSB/SB-login.html');
-      $('html, body').stop().animate({ scrollTop: 0 }, 0);
-    });
   }
 };
 

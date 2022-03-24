@@ -7,6 +7,14 @@
       $("#modal").load("./modal.html");
     });
 
+    var btnLogout = document.getElementById('btn-logout');
+    btnLogout.addEventListener('click', (e) => {
+      $('html').stop().animate({ scrollTop: 0 }, 0);
+      if (sessionStorage.getItem('loginFlag') !== 'true') {
+        document.getElementById('title').innerText = '잘못된 접근입니다.';
+      }
+      modalOn();
+    });
 
 
   </script>

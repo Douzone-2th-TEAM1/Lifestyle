@@ -1,6 +1,5 @@
 /* 전체 화면 커버 */
 .modal-overlay {
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -26,8 +25,8 @@
   border-radius: 16px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(13.5px);
-
-  width: 300px;
+  min-width: 300px;
+  width: fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
