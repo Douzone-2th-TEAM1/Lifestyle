@@ -72,7 +72,7 @@ var sportsPage = () => {
   });
 };
 
-var economyArticlePage = () => {
+var sportsArticlePage = () => {
   $(document).ready(function () {
     $('#main-contents').load('/html/TM/TM-page3.html');
     $('html, body').stop().animate({ scrollTop: 0 }, 0);
