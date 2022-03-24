@@ -1,14 +1,35 @@
+h2 {
+  font-weight: bold;
+  font-size: 23px;
+}
+h3 {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.6;
+}
+h4 {
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+}
 h5 {
+  margin: 0;
   font-weight: bold;
   font-size: 22px;
 }
-
 h6 {
-  margin: 0;
-  font-weight: 500;
-  font-size: 20px;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+  overflow: hidden;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
 }
-
 header {
   position: sticky;
   top: 0;
