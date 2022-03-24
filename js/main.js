@@ -24,7 +24,7 @@ var loadMain = () => {
 
 var livigPage = () => {
   $(document).ready(function () {
-    $('#main-contents').load('../../html/pcy/listpage.html');
+    $('#main-contents').load('/html/pcy/listpage.html');
     $('html, body').stop().animate({ scrollTop: 0 }, 0);
   });
 };

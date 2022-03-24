@@ -9,7 +9,7 @@
   align-items: center;
   min-width: 1400px;
   min-height: 914px;
-  background-image: url('../../public/images/SB/background.jpg');
+  background-image: url('/public/images/SB/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
