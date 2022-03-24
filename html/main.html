@@ -1,106 +1,97 @@
-<html>
-<head></head>
 <body>
-  <script defer src="../js/main.js"></script>
+  <script defer type="text/javascript" src="/js/main.js"> </script>
+ 
   <script type="text/javascript">
     $(document).ready(function () {
       $("#footer").load("./footer.html");
     });
-  </script>
-  <script type="text/javascript">
-    const livigPage = () => {
-      $(document).ready(function () {
-        $('#contents').load('../../html/pcy/listpage.html')
-      })
-    }
-  </script>
-  <script type="text/javascript">
-    const logout = () => {
-      alert('로그아웃 하였습니다.');
-    }
+
+
+
   </script>
 
   <!--HEADER-->
   <header>
-    <a href="/public/index.html"> <img src="./images/logo3.png" alt="LOGO" onclick="logout()"/> </a>
+    <img src="./images/logo3.png" alt="LOGO" onclick="loadMain()"/>
   </header>
 
   <!--CONTENTS-->
-  <div class="contents">
-
+  <div id="main-contents">
+    <div class="main_layout">
     <div class="swiper" reverseDirection="true">
       <div class="swiper-wrapper">
         <div class="swiper-slide"> <img src="./images/swiperImg2.jpeg" /></div>
         <div class="swiper-slide"><img src="./images/swiperImg3.jpeg" /></div>
         <div class="swiper-slide"><img src="./images/swiperImg4.jpeg" /></div>
       </div>
-    </div> <!--SWIPER END-->
+    </div> 
 
     <div class="inner__contents-card">
       <div class="card">
         <img src="./images/sample.jpeg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">LIVING</h5>
+          <h2 class="card-title">LIVING</h2>
           <p class="card-text">
             The work that you do for a living is the work that you do in order to earn the money that you need.
           </p>
-          <a href="../html/pcy/listPage.html" class="btn" style="background-color: #BB9981;">
-            <h6> Living</h6>
+          <div  class="btn" style="background-color: #BB9981;" onclick="livigPage()">
+            <h5> Living</h5>
             <span class="material-icons">chevron_right</span>
-          </a>
+          </div>
         </div>
       </div> <!-- CARD1 END-->
 
       <div class="card">
         <img src="./images/sample2.png" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title"><b>TECHNOLOGY</b></h5>
+          <h2 class="card-title">TECHNOLOGY</h2>
           <p class="card-text">
             Technology refers to methods, systems, and devices which are the result of scientific knowledge being used
             for practical purposes.
           </p>
-          <a href="../html/LDH/page1.html" class="btn" style="background: #C5D8A4;">
-            <h6> Tech</h6>
+          <div class="btn" style="background: #C5D8A4;" onclick="techPage()">
+            <h5>Tech</h5>
             <span class="material-icons">chevron_right</span>
-          </a>
+          </div>
         </div>
       </div> <!-- CARD2 END-->
     </div> <!-- FIRST ROW END-->
-
-    <div class="inner__contents-card">
+        <div class="inner__contents-card">
       <div class="card">
         <img src="./images/sample3.jpeg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">ECONOMY</h5>
+          <h2 class="card-title">ECONOMY</h2>
           <p class="card-text">
             An economy is the system according to which the money, industry, and trade of a country or region are
             organized.
           </p>
-          <a href="../html/JSB/SB-page2.html" class="btn" style="background: #5B7DB1;">
-            <h6> Economy</h6>
+          <div onclick="economyPage()"  class="btn" style="background: #5B7DB1;">
+            <h5> Economy</h5>
             <span class="material-icons">chevron_right</span>
-          </a></a>
+          </div></a>
         </div>
       </div> <!-- CARD3 END-->
 
       <div class="card">
         <img src="./images/sample4.jpeg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title"><b>SPORTS</b></h5>
+          <h2 class="card-title"><b>SPORTS</b></h2>
           <p class="card-text">
             Even with some surprises, all the teams left have good cases to make that they can make a run toward the
             Final Four.
           </p>
-          <a href="../html/TM/TM-page2.html" class="btn" style="background: #534340;">
-            <h6> Sports</h6>
+          <div onclick="sportsPage()" class="btn" style="background: #534340;">
+            <h5> Sports</h5>
             <span class="material-icons">chevron_right</span>
-          </a></a>
+          </div></a>
         </div>
       </div> <!-- CARD4 END-->
     </div> <!-- SECOND ROW END-->
   </div> <!--CONTENTS END-->
+    </div>
+
+
 
   <!--FOOTER-->
   <div id="footer"></div> 
 </body>
-</html>
