@@ -63,6 +63,7 @@ input::placeholder {
 #input-password {
   width: 100%;
   border: none;
+  outline: none;
 }
 
 /* BUTTON 영역 레이아웃 설정 */

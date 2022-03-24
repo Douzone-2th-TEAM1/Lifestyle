@@ -43,7 +43,13 @@ header {
 }
 
 header img {
+  cursor: pointer;
   height: 50px;
+}
+
+/* 로그아웃 버튼 위치 수정 필요 */
+header #btn-logout {
+  position: relative;
 }
 
 .main_layout {
