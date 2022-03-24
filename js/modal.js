@@ -17,7 +17,9 @@ function modalOff() {
 
 var btnLogout = document.getElementById('btn-logout');
 btnLogout.addEventListener('click', (e) => {
+  // console.log(window.scrollY);
   $('html').stop().animate({ scrollTop: 0 }, 0);
+  // $('html').stop().animate({ scrollTop: window.scrollY }, 0);
   if (sessionStorage.getItem('loginFlag') !== 'true') {
     document.getElementById('title').innerText = '잘못된 접근입니다.';
   }

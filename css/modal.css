@@ -1,5 +1,6 @@
 /* 전체 화면 커버 */
 .modal-overlay {
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -32,6 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 4;
 }
 
 #title {
