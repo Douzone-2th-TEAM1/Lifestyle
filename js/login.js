@@ -20,8 +20,9 @@ var signIn = () => {
     if (originInfos[i][0] === userName && originInfos[i][1] === userPassword) {
       alert('로그인에 성공했습니다.');
       // 임시 로그인 유지 기능 sessionStorage
+      sessionStorage.setItem('loginFlag', true);
       $(document).ready(function () {
-        $('body').load('/html/main.html');
+        $('#root-body').load('/html/main.html');
       });
       return;
     }

@@ -1,40 +1,33 @@
-<html>
-<head></head>
 <body>
-  <script defer src="../js/main.js"></script>
+  <script defer type="text/javascript" src="/js/main.js"> </script>
   <script type="text/javascript">
     $(document).ready(function () {
       $("#footer").load("./footer.html");
     });
+  var livigPage = () => {
+  $(document).ready(function () {
+    $('#main-contents').load('../../html/pcy/listpage.html');
+  });
+};
+
   </script>
-  <script type="text/javascript">
-    const livigPage = () => {
-      $(document).ready(function () {
-        $('#contents').load('../../html/pcy/listpage.html')
-      })
-    }
-  </script>
-  <script type="text/javascript">
-    const logout = () => {
-      alert('로그아웃 하였습니다.');
-    }
-  </script>
+  <link rel="stylesheet" href="/css/main.css"/>
 
   <!--HEADER-->
   <header>
-    <a href="/public/index.html"> <img src="./images/logo3.png" alt="LOGO" onclick="logout()"/> </a>
+    <img src="./images/logo3.png" alt="LOGO" onclick="loadMain()"/>
   </header>
 
   <!--CONTENTS-->
-  <div class="contents">
-
+  <div id="main-contents">
+    <div class="main_layout">
     <div class="swiper" reverseDirection="true">
       <div class="swiper-wrapper">
         <div class="swiper-slide"> <img src="./images/swiperImg2.jpeg" /></div>
         <div class="swiper-slide"><img src="./images/swiperImg3.jpeg" /></div>
         <div class="swiper-slide"><img src="./images/swiperImg4.jpeg" /></div>
       </div>
-    </div> <!--SWIPER END-->
+    </div> 
 
     <div class="inner__contents-card">
       <div class="card">
@@ -44,10 +37,10 @@
           <p class="card-text">
             The work that you do for a living is the work that you do in order to earn the money that you need.
           </p>
-          <a href="../html/pcy/listPage.html" class="btn" style="background-color: #BB9981;">
+          <div  class="btn" style="background-color: #BB9981;" onclick="livigPage()">
             <h6> Living</h6>
             <span class="material-icons">chevron_right</span>
-          </a>
+          </div>
         </div>
       </div> <!-- CARD1 END-->
 
@@ -66,8 +59,7 @@
         </div>
       </div> <!-- CARD2 END-->
     </div> <!-- FIRST ROW END-->
-
-    <div class="inner__contents-card">
+        <div class="inner__contents-card">
       <div class="card">
         <img src="./images/sample3.jpeg" class="card-img-top" alt="..." />
         <div class="card-body">
@@ -99,8 +91,10 @@
       </div> <!-- CARD4 END-->
     </div> <!-- SECOND ROW END-->
   </div> <!--CONTENTS END-->
+    </div>
+
+
 
   <!--FOOTER-->
   <div id="footer"></div> 
 </body>
-</html>
