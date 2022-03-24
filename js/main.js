@@ -52,3 +52,16 @@ var techArticlePage = () => {
     $('html, body').stop().animate({ scrollTop: 0 }, 0);
   });
 };
+
+var economyPage = () => {
+  $(document).ready(function () {
+    $('#main-contents').load('/html/JSB/SB-page2.html');
+  });
+};
+
+var economyArticlePage = () => {
+  $(document).ready(function () {
+    $('#main-contents').load('/html/JSB/SB-page3.html');
+    $('html, body').stop().animate({ scrollTop: 0 }, 0);
+  });
+};
