@@ -1,62 +1,93 @@
-body {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.4;
-  min-width: 1570px;
+h2 {
+  font-weight: bold;
+  font-size: 23px;
 }
-
+h3 {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.6;
+}
+h4 {
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+}
 h5 {
+  margin: 0;
   font-weight: bold;
   font-size: 22px;
 }
-
 h6 {
-  margin: 0;
-  font-weight: 500;
-  font-size: 20px;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+  overflow: hidden;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
 }
-
 header {
   position: sticky;
   top: 0;
   z-index: 2;
   display: flex;
-  justify-items: center;
+  justify-content: space-between;
   align-items: center;
-  /* height: 50px; */
   background-color: #ffeddb;
   padding: 15px 20%;
 }
 
 header img {
+  cursor: pointer;
   height: 50px;
 }
 
-.contents {
-  height: auto;
-  /* width: 100%; */
-  padding: 5% 20%;
+header #btn-logout {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  background-color: #aa8f7a;
+  font-weight: bold;
+  color: white;
 }
-
-.contents .inner__contents-img {
+header #btn-logout:hover {
+  background-color: #534340;
+}
+.main_layout {
+  padding: 2% 20%;
+  height: auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  min-width: 1570px;
+  background-color: white;
+}
+.inner__contents-img {
   width: 100%;
   height: 400px;
 }
 
-.contents .swiper {
+.swiper {
   width: 100%;
   height: 450px;
 }
 
-.contents .swiper img {
+.swiper img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   background-color: #fef5ed;
 }
 
-.contents .inner__contents-card {
+.inner__contents-card {
+  display: flex;
+  justify-content: space-between;
   margin-top: 136px;
   width: 100%;
   display: flex;
@@ -108,12 +139,7 @@ header img {
   font-size: 30px;
   font-weight: bold;
 }
-.contents .contents__img {
+.main_layout .contents__img {
   width: 60;
   height: 400px;
-}
-a {
-  text-decoration: none;
-  color: black;
-  height: 50px;
 }

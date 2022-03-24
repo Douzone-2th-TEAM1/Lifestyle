@@ -1,31 +1,21 @@
-body {
-  /* display: grid;
-  grid-template-rows: 1fr auto;
-  grid-template-areas: "main" "footer";
-  overflow-x: hidden;
-  background: #f5f7fa;
-  min-height: 100vh;
-  font-family: "Open Sans", sans-serif; */
-}
-body .footer {
+.footer {
   margin-top: 40px;
   z-index: 1;
   --footer-background: #e3b7a0;
   display: grid;
   position: relative;
-  /* grid-area: footer; */
   min-height: 190px;
 }
-body .footer .bubbles {
+.footer .bubbles {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 1rem;
   background: var(--footer-background);
-  filter: url("#blob");
+  filter: url('#blob');
 }
-body .footer .bubbles .bubble {
+.footer .bubbles .bubble {
   position: absolute;
   left: var(--position, 50%);
   background: var(--footer-background);
@@ -37,7 +27,7 @@ body .footer .bubbles .bubble {
     bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
   transform: translate(-50%, 100%);
 }
-body .footer .content {
+.footer .content {
   z-index: 2;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -45,37 +35,31 @@ body .footer .content {
   padding: 1% 10%;
   background: var(--footer-background);
 }
-body .footer .content a,
-body .footer .content p {
+.footer .content a,
+.footer .content p {
   color: #f5f7fa;
   text-decoration: none;
 }
-body .footer .content b {
+.footer .content b {
   color: white;
 }
-body .footer .content p {
+.footer .content p {
   margin: 0;
   font-size: 0.75rem;
 }
 
-body .footer .content h5 {
-  font-size: 15px;
-  font-weight: 400;
-  color: white;
-  line-height: 1.7;
-}
-body .footer .content > div {
+.footer .content > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body .footer .content > div > div {
+.footer .content > div > div {
   margin: 0.25rem 0;
 }
-body .footer .content > div > div > * {
+.footer .content > div > div > * {
   margin-right: 0.5rem;
 }
-body .footer .content > div .image {
+.footer .content > div .image {
   align-self: center;
   width: 4rem;
   height: 4rem;

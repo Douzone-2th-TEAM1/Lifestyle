@@ -1,0 +1,36 @@
+<body>
+  <link rel="stylesheet" href="/css/login.css" />
+  <script type="text/javascript" src="/js/login.js"></script>
+
+  <form class="login-layout">
+    <div id="login-id">
+      <span class="material-icons"> perm_identity </span>
+      <span id="divider"></span>
+      <input type="text" placeholder="Userame" id="input-id" class="input-id" />
+    </div>
+    <div id="login-password">
+      <span class="material-icons"> lock </span>
+      <span id="divider"></span>
+      <input
+        type="password"
+        name=""
+        placeholder="Password"
+        id="input-password"
+        class="input-password"
+      />
+    </div>
+    <div id="login-button">
+      <input
+        type="button"
+        onclick="signIn()"
+        value="SIGN IN"
+        id="btn-signin"
+        disabled
+        class="btn-signin off-button"
+      />
+      <div id="create-account" onclick="createAccount()">
+        Create your account
+      </div>
+    </div>
+  </form>
+</body>

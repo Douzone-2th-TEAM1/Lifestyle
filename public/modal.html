@@ -1,0 +1,30 @@
+
+<body>
+  <link rel="stylesheet" href="/css/modal.css" />
+  <script defer type="text/javascript" src="/js/modal.js"> </script>
+  <script>
+      var btnSubmit = document.getElementById('btn-submit');
+      btnSubmit.addEventListener('click', (e) => {
+        sessionStorage.setItem('loginFlag', 'false');
+        modalOff();
+
+        if(modal.getElementsByClassName('title')[0].innerHTML ==='로그아웃합니다.'||
+        modal.getElementsByClassName('title')[0].innerHTML ==='잘못된 접근입니다.'){
+              $(document).ready(function () {
+            $('#root-body').load('/html/JSB/SB-login.html');
+        });
+        }
+
+      });
+  </script>
+  
+  <div class="modal-overlay">
+    <div class="modal-window">
+      <div id="title" class="title" >로그아웃합니다.</div>
+      <div id="modal-divider"></div>
+      <div class="modal-buttons">
+        <input type="button" class="modal-button-bottom" id="btn-submit" value="확인"></input>
+      </div>
+    </div>
+  </div>
+</body>

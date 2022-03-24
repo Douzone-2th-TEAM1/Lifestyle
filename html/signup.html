@@ -1,0 +1,36 @@
+<body>
+  <link rel="stylesheet" href="/css/signup.css" />
+  <script type="text/javascript" src="/js/signup.js"></script>
+  <form class="contents">
+    <div class="id_layout">
+      <input id="userName" class="userName" placeholder="User name" />
+      <span id="divider"></span>
+      <input
+        id="checkid"
+        class="btn"
+        type="button"
+        value="Check ID"
+        onclick="checkID()"
+      />
+    </div>
+    <input
+      type="password"
+      id="password"
+      class="password"
+      placeholder="Password"
+    />
+    <input
+      type="password"
+      id="passwordOk"
+      class="passwordOk"
+      placeholder="Confirm Password"
+    />
+    <input
+      id="signup"
+      class="btn"
+      type="button"
+      value="SIGN UP"
+      onclick="signUp()"
+    />
+  </form>
+</body>
