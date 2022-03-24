@@ -1,14 +1,14 @@
-# Mini-Hompage
+# 🔖 프로젝트 소개
 
-미니 프로젝트
+ > 일상, 스포츠, IT, 경제 등 일상 생활과 관련된 다양한 정보와 소식 등을 소개하는 웹 매거진 구현
+
+<br/>
 
 ## 👨🏻‍🏫 디자인 시안
 
-<a href="https://www.figma.com/file/8z2bUrJVoYibwKpapkWWiK/Untitled?node-id=0%3A1" >디자인 시안</a>
+<a type="_blank" href="https://www.figma.com/file/8z2bUrJVoYibwKpapkWWiK/Untitled?node-id=0%3A1" >디자인 시안 바로가기 ❯ </a>
 
-## 🔖 프로젝트 소개
-
-> 일상, 스포츠, IT, 경제 등 일상 생활과 관련된 다양한 정보와 소식 등을 소개하는 웹 매거진 구현
+<br/>
 
 ## 📂 프로젝트 구조
 
