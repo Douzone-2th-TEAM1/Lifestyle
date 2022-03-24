@@ -17,8 +17,10 @@ function modalOff() {
 
 var btnLogout = document.getElementById('btn-logout');
 btnLogout.addEventListener('click', (e) => {
-  // 아 왜 안돼 이렇게라도 해야되나
   $('html').stop().animate({ scrollTop: 0 }, 0);
+  if (sessionStorage.getItem('loginFlag') !== 'true') {
+    document.getElementById('title').innerText = '잘못된 접근입니다.';
+  }
   modalOn();
 });
 
@@ -29,9 +31,7 @@ btnLogout.addEventListener('click', (e) => {
 
 var btnSubmit = document.getElementById('btn-submit');
 btnSubmit.addEventListener('click', (e) => {
-  /**
-   * 여기에 index.html로 이동하는 코드 넣으면 될듯
-   */
+  sessionStorage.setItem('loginFlag', 'false');
   modalOff();
   $(document).ready(function () {
     $('#root-body').load('/html/JSB/SB-login.html');

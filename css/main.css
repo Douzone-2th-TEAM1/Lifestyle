@@ -35,7 +35,7 @@ header {
   top: 0;
   z-index: 2;
   display: flex;
-  justify-items: center;
+  justify-content: space-between;
   align-items: center;
   /* height: 50px; */
   background-color: #ffeddb;
@@ -49,9 +49,18 @@ header img {
 
 /* 로그아웃 버튼 위치 수정 필요 */
 header #btn-logout {
-  position: relative;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  background-color: #aa8f7a;
+  font-weight: bold;
+  color: white;
+  /* position: relative; */
 }
-
+header #btn-logout:hover {
+  background-color: #534340;
+}
 .main_layout {
   padding: 2% 20%;
   height: auto;
