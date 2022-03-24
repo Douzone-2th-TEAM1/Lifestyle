@@ -4,15 +4,20 @@
   <script type="text/javascript">
     $(document).ready(function () {
       $("#footer").load("./footer.html");
+      $("#modal").load("./modal.html");
     });
 
 
 
   </script>
 
+  <!-- MODAL -->
+  <div id="modal"></div>
   <!--HEADER-->
   <header>
     <img src="./images/logo3.png" alt="LOGO" onclick="loadMain()"/>
+    <!-- 로그아웃 버튼 -->
+    <input type="button" value="로그아웃" id="btn-logout">
   </header>
 
   <!--CONTENTS-->
