@@ -30,6 +30,7 @@ var loadMain = () => {
 var livigPage = () => {
   $(document).ready(function () {
     $('#main-contents').load('../../html/pcy/listpage.html');
+    $('html, body').stop().animate({ scrollTop: 0 }, 0);
   });
 };
 
@@ -43,6 +44,7 @@ var livingArticlePage = () => {
 var techPage = () => {
   $(document).ready(function () {
     $('#main-contents').load('/html/LDH/page1.html');
+    $('html, body').stop().animate({ scrollTop: 0 }, 0);
   });
 };
 
@@ -56,6 +58,7 @@ var techArticlePage = () => {
 var economyPage = () => {
   $(document).ready(function () {
     $('#main-contents').load('/html/JSB/SB-page2.html');
+    $('html, body').stop().animate({ scrollTop: 0 }, 0);
   });
 };
 
@@ -69,6 +72,7 @@ var economyArticlePage = () => {
 var sportsPage = () => {
   $(document).ready(function () {
     $('#main-contents').load('/html/TM/TM-page2.html');
+    $('html, body').stop().animate({ scrollTop: 0 }, 0);
   });
 };
 

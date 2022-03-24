@@ -84,6 +84,13 @@ input::placeholder {
 #btn-signin:hover {
   background: #ae774e;
 }
+
+#btn-signin:disabled {
+  background-color: #cdcdcd;
+  border: 1px solid #cdcdcd;
+  cursor: not-allowed;
+}
+
 /* CREATE ACCOUNT 설정*/
 #create-account {
   font-size: 12px;
