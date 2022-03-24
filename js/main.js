@@ -39,3 +39,16 @@ var livingArticlePage = () => {
     $('html, body').stop().animate({ scrollTop: 0 }, 0);
   });
 };
+
+var techPage = () => {
+  $(document).ready(function () {
+    $('#main-contents').load('/html/LDH/page1.html');
+  });
+};
+
+var techArticlePage = () => {
+  $(document).ready(function () {
+    $('#main-contents').load('/html/LDH/page2.html');
+    $('html, body').stop().animate({ scrollTop: 0 }, 0);
+  });
+};
