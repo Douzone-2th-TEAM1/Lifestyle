@@ -65,3 +65,16 @@ var economyArticlePage = () => {
     $('html, body').stop().animate({ scrollTop: 0 }, 0);
   });
 };
+
+var sportsPage = () => {
+  $(document).ready(function () {
+    $('#main-contents').load('/html/TM/TM-page2.html');
+  });
+};
+
+var economyArticlePage = () => {
+  $(document).ready(function () {
+    $('#main-contents').load('/html/TM/TM-page3.html');
+    $('html, body').stop().animate({ scrollTop: 0 }, 0);
+  });
+};
