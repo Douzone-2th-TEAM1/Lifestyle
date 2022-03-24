@@ -1,4 +1,4 @@
-const userName = document.getElementsByClassName('input-id')[0];
+var userName = document.getElementsByClassName('input-id')[0];
 var userPassword = document.getElementsByClassName('input-password')[0];
 var loginBtn = document.getElementsByClassName('btn-signin')[0];
 
@@ -14,7 +14,10 @@ var signIn = () => {
   if (localStorage.getItem('userInfo') === null) {
     userName.value = '';
     userPassword.value = '';
-    alert('잘못된 아이디 혹는 비밀번호입니다.');
+
+    modal.getElementsByClassName('title')[0].innerHTML =
+      '알 수 없는 에러가 발생했습니다.';
+    modalOn();
     return;
   }
   const originInfos = JSON.parse(localStorage.getItem('userInfo'));
@@ -30,12 +33,14 @@ var signIn = () => {
       return;
     }
   }
-
   userName.value = '';
   userPassword.value = '';
-  alert('잘못된 아이디 혹는 비밀번호입니다.');
+
+  modal.getElementsByClassName('title')[0].innerHTML =
+    '잘못된 아이디 혹은 비밀번호입니다.';
+  modalOn();
 };
-/* CREATE ACCOUNT FUNCTION */
+
 var createAccount = () => {
   $('#layout').load('/html/signup.html');
 };
