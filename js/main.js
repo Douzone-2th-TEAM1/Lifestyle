@@ -5,10 +5,8 @@ var swiper = new Swiper('.swiper', {
     delay: 3000,
   },
 });
-// debugger;
-var myswiper = document.querySelector('.swiper').swiper;
 
-// Now you can use all slider methods like
+var myswiper = document.querySelector('.swiper').swiper;
 myswiper.autoplay.running;
 
 var loadMain = () => {

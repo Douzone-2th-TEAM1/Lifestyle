@@ -24,14 +24,12 @@ input::placeholder {
   padding-left: 30px;
 }
 
-/* ID / PASSWORD 영역 */
-/* ID / PASSWORD / BUTTON width 설정 */
 #login-id,
 #login-password,
 #login-button {
   width: 300px;
 }
-/* ID / PASSWORD 레이아웃 설정 */
+
 #login-id,
 #login-password {
   display: flex;
@@ -39,7 +37,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
 }
-/* ID / PASSWORD 테두리 설정 */
+
 #login-id,
 #login-password {
   border: 1px solid #000000;
@@ -47,14 +45,13 @@ input::placeholder {
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-/* ID / PASSWORD 아이콘 구분자 */
+
 #divider {
   width: 10px;
   height: 24px;
   border-right: 1px solid #000000;
 }
 
-/* ID / PASSWORD 입력창 width 설정 */
 #input-id,
 #input-password {
   width: 100%;
@@ -62,13 +59,11 @@ input::placeholder {
   outline: none;
 }
 
-/* BUTTON 영역 레이아웃 설정 */
 #login-button {
   display: flex;
   flex-direction: column;
 }
 
-/* BUTTON SIGN IN 설정 */
 #btn-signin {
   width: 100%;
   height: auto;
@@ -87,7 +82,6 @@ input::placeholder {
   cursor: not-allowed;
 }
 
-/* CREATE ACCOUNT 설정*/
 #create-account {
   font-size: 12px;
   color: #bf9270;

@@ -6,16 +6,13 @@
 
 .contents__item .box {
   display: flex;
-  /* border: 1px solid black; */
   background-color: white;
   width: 100%;
-  /* height: 450px; */
 }
 
 .contents__item .box img {
   width: 400px;
   height: 300px;
-  /* height: 30%; */
 }
 
 .contents__item .box .box__text {

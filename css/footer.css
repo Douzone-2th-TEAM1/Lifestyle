@@ -4,7 +4,6 @@
   --footer-background: #e3b7a0;
   display: grid;
   position: relative;
-  /* grid-area: footer; */
   min-height: 190px;
 }
 .footer .bubbles {

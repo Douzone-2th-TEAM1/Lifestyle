@@ -37,7 +37,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: 50px; */
   background-color: #ffeddb;
   padding: 15px 20%;
 }
@@ -47,7 +46,6 @@ header img {
   height: 50px;
 }
 
-/* 로그아웃 버튼 위치 수정 필요 */
 header #btn-logout {
   outline: none;
   border: none;
@@ -56,7 +54,6 @@ header #btn-logout {
   background-color: #aa8f7a;
   font-weight: bold;
   color: white;
-  /* position: relative; */
 }
 header #btn-logout:hover {
   background-color: #534340;
@@ -145,9 +142,4 @@ header #btn-logout:hover {
 .main_layout .contents__img {
   width: 60;
   height: 400px;
-}
-a {
-  text-decoration: none;
-  color: black;
-  height: 50px;
 }

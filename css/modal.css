@@ -1,4 +1,3 @@
-/* 전체 화면 커버 */
 .modal-overlay {
   position: absolute;
   top: 0;
@@ -13,12 +12,9 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(1.5px);
-
-  /* 이건 혹시 몰라서*/
   z-index: 3;
 }
 
-/* 모달 팝업 창*/
 .modal-window {
   background: #f4f4f4;
   border: solid 1px rgba(255, 255, 255, 0.18);
@@ -72,5 +68,4 @@
 .modal-buttons .modal-button-bottom:hover {
   cursor: pointer;
   color: rgba(255, 0, 0, 0.555);
-  /* background: #979797; */
 }
