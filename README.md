@@ -51,18 +51,10 @@
 
 ![로그인](https://user-images.githubusercontent.com/40657327/160034616-bd629bd8-f58f-421e-8178-2f1f1a7ea59d.gif)
 
-
-`회원가입` 
+`회원가입`
 
 ![회원가입](https://user-images.githubusercontent.com/40657327/160034377-93b231f7-4988-41a4-9585-5ca5ad5b9b91.gif)
-
 
 `메인 화면`
 
 ![메인](https://user-images.githubusercontent.com/40657327/160033912-615acafa-8170-4df3-b8ef-87df3ee74ab0.gif)
-
-
-
-
-
-

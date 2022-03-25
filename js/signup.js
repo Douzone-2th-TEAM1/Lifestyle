@@ -5,7 +5,7 @@ var flag = false;
 var checkIdFlag = false;
 var user = '';
 
-const checkID = () => {
+var checkID = () => {
   user = document.getElementById('userName').value;
   if (user.length === 0) {
     modal.getElementsByClassName('title')[0].innerHTML = '아이디를 입력하세요.';
@@ -30,6 +30,8 @@ const checkID = () => {
   if (flag) {
     modal.getElementsByClassName('title')[0].innerHTML = '사용가능한 ID입니다.';
     modalOn();
+    document.getElementsByClassName('userName')[0].disabled = true;
+    // debugger;
   } else {
     document.getElementById('userName').value = '';
     modal.getElementsByClassName('title')[0].innerHTML =
@@ -38,7 +40,7 @@ const checkID = () => {
   }
 };
 
-const signUp = () => {
+var signUp = () => {
   let user = document.getElementById('userName').value;
   const event = document.getElementsByClassName('contents')[0];
   let pwd = event[2].value;

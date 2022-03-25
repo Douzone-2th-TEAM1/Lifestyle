@@ -12,7 +12,7 @@ function isModalOn() {
 
 function modalOff() {
   modal.style.display = 'none';
-  $('#root-body').css('overflow', 'scroll');
+  $('#root-body').css('overflow', 'auto');
 }
 
 modal.addEventListener('click', (e) => {
